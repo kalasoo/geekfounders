@@ -2957,7 +2957,7 @@ html input[disabled] {
   left: 50%;
   display: inline-block;
   height: 5px;
-  width: 80px;
+  width: 70px;
   background: #ccc;
   color: #000;
   cursor: pointer;
@@ -2967,16 +2967,16 @@ html input[disabled] {
   background: #60ADC7; }
 
 .client-tab-label-1 {
-  margin-left: -190px; }
+  margin-left: -170px; }
 
 .client-tab-label-2 {
-  margin-left: -90px; }
+  margin-left: -80px; }
 
 .client-tab-label-3 {
   margin-left: 10px; }
 
 .client-tab-label-4 {
-  margin-left: 110px; }
+  margin-left: 100px; }
 
 .team-list {
   list-style: none;
