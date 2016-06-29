@@ -2950,27 +2950,35 @@ html input[disabled] {
 .client-tab-radio-3:checked + .client-tab-label + .client-tab-3 {
   display: block; }
 
+.client-tab-radio-4:checked + .client-tab-label + .client-tab-4 {
+  display: block; }
+
 .client-tab-label {
   position: absolute;
   bottom: 10px;
   left: 50%;
   display: inline-block;
   height: 5px;
-  width: 40px;
+  width: 80px;
   background: #ccc;
-  cursor: pointer; }
+  color: #000;
+  cursor: pointer;
+  line-height: 36px;}
 
 .client-tab-radio:checked + .client-tab-label {
   background: #60ADC7; }
 
 .client-tab-label-1 {
-  margin-left: -70px; }
+  margin-left: -190px; }
 
 .client-tab-label-2 {
-  margin-left: -20px; }
+  margin-left: -90px; }
 
 .client-tab-label-3 {
-  margin-left: 30px; }
+  margin-left: 10px; }
+
+.client-tab-label-4 {
+  margin-left: 110px; }
 
 .team-list {
   list-style: none;
