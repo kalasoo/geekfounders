@@ -1,10 +1,3 @@
-/* ==========================================================================
-
-// Base Stylesheet - http://getbase.org
-// Author: Matthew Hartman - http://www.matthewhartman.com.au/
-// Version: 3.0.2 - Last Updated: May 21, 2016
-
-========================================================================== */
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -2521,7 +2514,8 @@ html input[disabled] {
 
 .banner {
   background: url(../img/banner.jpg) 0 0 no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 100px; }
   .banner:after {
     position: relative;
     margin-top: -200px;
@@ -2532,10 +2526,19 @@ html input[disabled] {
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxMjAwcHgiIGhlaWdodD0iNDM4cHgiIHZpZXdCb3g9IjAgMCAxMjAwIDQzOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTIwMCA0Mzg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMCw0MDUuOGM0Mi40LTE0LjUsODQuNy0yOS41LDEyNy40LTQzLjJjMjIuOC03LjMsNDMuMy0xOC45LDY0LjMtMjkuOGMzNS4xLTE4LjIsNzAuMS0zNi43LDEwNS01NS4xDQoJCQljMi4zLTEuMiw0LjItMS40LDYuNy0wLjdjNDcuNiwxMy40LDk1LjIsMjYuOCwxNDIuOSw0MGMyLjMsMC42LDUuMiwwLjUsNy40LTAuM2M0Ny44LTE2LjYsOTUuNS0zMy4zLDE0My4zLTUwLjENCgkJCWMyLjItMC44LDQuNC0xLjgsNi41LTIuOWM0Ny43LTI1LjUsOTUuNS01MS4xLDE0My4yLTc2LjdjMi40LTEuMyw0LjQtMS4zLDYuOS0wLjNjNDcuNSwxOS4xLDk1LjEsMzguMSwxNDIuNiw1Ny4yDQoJCQljMi43LDEuMSw0LjcsMSw3LjMtMC4zYzQ3LjYtMjQuNiw5NS4zLTQ5LjEsMTQzLTczLjhjMi4yLTEuMSw0LjItMi43LDUuOS00LjVjNDguNS01NC4zLDk3LTEwOC43LDE0NS41LTE2My4xDQoJCQljMC43LTAuNywxLjQtMS40LDIuMS0yLjFjMCwxNDYsMCwyOTEuOSwwLDQzOGMtNDAwLDAtODAwLDAtMTIwMCwwQzAsNDI3LjIsMCw0MTYuNSwwLDQwNS44eiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K) 50% 50% no-repeat;
     background-size: cover;
     pointer-events: none; }
+.banner-inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
 
-@media only screen and (min-width: 740px) {
+@media only screen and (max-width: 740px) {
+  .banner {
+     margin-bottom: 0;
+  }
   .banner-inner {
-    padding-top: 70px; } }
+      padding: 40px 0;
+  }
+}
 
 .banner-lead {
   margin-top: 22px;
@@ -2628,11 +2631,21 @@ html input[disabled] {
     padding-right: 15px; } }
 
 .logo {
+  position: relative;
+  top: -16px;
   display: inline-block;
   font-size: 20px;
   line-height: 26px;
-  padding-top: 16px;
   }
+.logo .logo-img {
+    height: 100px;
+}
+.logo .logo-img.square {
+    height: 50px;
+}
+.logo-img.square {
+    display: none;
+}
 .logo a {
   color: #fff;
   text-decoration: none;
@@ -2640,14 +2653,15 @@ html input[disabled] {
 .logo a:hover, .logo a:active {
   color: rgba(255, 255, 255, .8);
 }
-@media only screen and (min-width: 980px) {
-  .logo {
-    padding-top: 8px;
-  }
-}
 @media only screen and (max-width: 740px) {
   .logo {
-    padding-top: 8px;
+      top: 0;
+  }
+  .logo-img:not(.square)  {
+      display: none;
+  }
+  .logo-img.square {
+      display: inline;
   }
 }
 
