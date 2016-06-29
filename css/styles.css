@@ -2483,7 +2483,7 @@ html input[disabled] {
   margin: 70px 20px; }
   @media only screen and (min-width: 740px) {
     .modal-inner {
-      margin: 20px auto;
+      margin: 100px auto;
       width: 600px; } }
 
 .modal-close {
@@ -3034,7 +3034,7 @@ html input[disabled] {
   margin-top: 5px; }
   @media only screen and (min-width: 740px) {
     .team-profile-image {
-      width: auto;
+      width: 200px;
       float: left;
       margin-right: 20px;
       margin-bottom: 0; } }
