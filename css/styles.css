@@ -2749,7 +2749,7 @@ html input[disabled] {
     @media only screen and (min-width: 740px) {
       .navigation-menu .navigation-item {
         display: inline-block;
-        margin: 0 10px; } }
+        margin: 0 5px; } }
     @media only screen and (min-width: 980px) {
       .navigation-menu .navigation-item {
         margin: 0 20px; } }
@@ -2766,10 +2766,8 @@ html input[disabled] {
       position: relative; }
       @media only screen and (min-width: 740px) {
         .navigation-menu .navigation-item > a {
-          font-size: 13px;
-          font-size: 0.8125rem;
+          font-size: 16px;
           line-height: 16px;
-          line-height: 1rem;
           color: #fff;
           padding: 10px 0;
           position: relative; }
